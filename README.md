@@ -33,7 +33,6 @@ pip install -r requirements.txt
 streamlit run app.py
 
 
-
 Disclaimer
 
 This project is for educational purposes only and is not a medical diagnostic tool.
