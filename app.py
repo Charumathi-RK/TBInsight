@@ -22,6 +22,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+
 # Initialize session state
 if 'analysis_complete' not in st.session_state:
     st.session_state.analysis_complete = False
@@ -41,7 +42,17 @@ def main():
     ⚠️ **Medical Disclaimer**: This system is designed to assist healthcare professionals in TB screening. 
     It should not replace professional medical diagnosis and treatment decisions.
     """)
+    # Sidebar logo at the top
+    st.markdown("""
+        <style>
+        [data-testid="stSidebar"] img {
+            margin-top: -40px;  /* Move up */
+            margin-bottom: 10px;
+        }
+        </style>
+    """, unsafe_allow_html=True)
     
+    st.sidebar.image("logo.png", use_container_width=False)
     # Sidebar for navigation
     st.sidebar.title("Navigation")
     page = st.sidebar.selectbox(

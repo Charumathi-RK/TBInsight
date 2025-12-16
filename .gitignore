@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.local/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Build files
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Replit
+.replit
+uv.lock
+
+# Copies / backups
+COPIES!/
