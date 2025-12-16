@@ -1,0 +1,7 @@
+streamlit==1.52.1
+numpy
+pandas
+opencv-python
+Pillow
+plotly
+scikit-learn
